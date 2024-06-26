@@ -8,4 +8,5 @@ Also It's integral that you have Vanilla armour and core expanded enabled. The m
 Lastly, I wanna say that I in no way associate myself with Oscar Pottocki, or any other developer who took play in Vanilla Armour Expanded. I have only reused their Marine glove and boot textures as templates to stay inline with their artstyle, as well as the base of their code for their handwear and footwear apparel category.
 
 You have all rights to use, reuse, share, modify and otherwise interact with this mod under GNU General Public License.
+
 Lastly for Vanilla Expanded Associates, you are within your right to take this mod down, and I will do so willingly, let us avoid legal action (if on any basis you find copyright infringement)
