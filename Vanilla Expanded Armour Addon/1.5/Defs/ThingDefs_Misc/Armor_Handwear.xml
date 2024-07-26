@@ -84,6 +84,88 @@
 			</options>
 		</colorGenerator>
     </ThingDef>
+	
+	<!-- Flak Gloves -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Handwear_FlakGloves</defName>
+		<label>Flak gloves</label>
+		<description>A pair of Rattly Flak gloves made from cloth and steel plating for low cost, low tech protection..
+		
+		Added straps allow for better fitting, minimizing negative effects of their weight.</description>
+		<graphicData>
+			<texPath>Things/Handwear/FlakGloves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.1</generateCommonality>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Cloth>20</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>1.8</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.479</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>VAE_BootsAndGloves</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<!-- Vanilla Power Armor -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 
 	<!-- Trooper Gloves -->
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -262,8 +344,7 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Handwear_CataphractGloves</defName>
 		<label>Cataphract gloves</label>
-		<description>
-			A pair of Cataphcract gloves used to cover hands against high end rifle infantry, with interlocking mechanism preventing major recoil, they greatly enhance user's ability to keep aim.
+		<description>A pair of Cataphcract gloves used to cover hands against high end rifle infantry, with interlocking mechanism preventing major recoil, they greatly enhance user's ability to keep aim.
 
 Developer's Note: Apart from redesigning the glove's sprite, I look to add a special variant with energy recharge, which is currently the sprite being used for standard Cataphract gloves, Hopefully I'll figure it out soon :]
 		</description>
@@ -282,7 +363,7 @@ Developer's Note: Apart from redesigning the glove's sprite, I look to add a spe
 			<Uranium>15</Uranium>
 		</costList>
 		<statBases>
-			<MaxHitPoints>30</MaxHitPoints>
+			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>25000</WorkToMake>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
@@ -352,7 +433,7 @@ Developer's Note: Apart from redesigning the glove's sprite, I look to add a spe
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Handwear_EnergyCataphractGloves</defName>
 		<label>!!EXPERIMENTAL!! Energy Generation Cataphract gloves</label>
-		<description> !!EXPERIMENTAL!! THESE GLOVES ARE CURRENTLY UNDER DEVELOPMENT AND DO NOT SERVE THEIR PURPOSE
+		<description>!!EXPERIMENTAL!! THESE GLOVES ARE CURRENTLY UNDER DEVELOPMENT AND DO NOT SERVE THEIR PURPOSE
 			
 A pair of Cataphcract gloves used to cover hands against high end rifle infantry, with interlocking mechanism preventing major recoil, they greatly enhance user's ability to keep aim.
 
@@ -374,7 +455,7 @@ Roadplan will follow adding function to boost Shield Recharge Rate for Shieldbel
 			<Uranium>15</Uranium>
 		</costList>
 		<statBases>
-			<MaxHitPoints>30</MaxHitPoints>
+			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>25000</WorkToMake>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>

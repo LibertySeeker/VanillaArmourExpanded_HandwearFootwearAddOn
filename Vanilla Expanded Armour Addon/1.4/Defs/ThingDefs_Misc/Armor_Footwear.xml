@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<!-- Flak Boots -->
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Footwear_FlakBoots</defName>
+		<label>Flak boots</label>
+		<description>A pair of Flak boots, plated with Steel on cloth, the design uses less plating in favour of mobility.
+
+			Flak boots were outfitted with several straps to hold the armor in place while not compromising mobility.
+		</description>
+		<graphicData>
+			<texPath>Things/Footwear/FlakBoots</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.1</generateCommonality>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Cloth>20</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>1.8</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.49</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.23</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>VAE_BootsAndGloves</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustialMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<!-- Vanilla Power Armor -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
    
 	<!-- Trooper Boots -->
 		
