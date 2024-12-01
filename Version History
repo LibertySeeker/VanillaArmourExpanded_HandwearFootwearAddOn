@@ -1,6 +1,11 @@
 Versions are sorted from most Recent to the oldest. Versions are labeled with V and number representing them following a dot and Zero representing subversion (subversion = minor tweaks and balance changes). Exapmle, Version 1.0 is label V-1.0 and can be found at the Bottom. (Subversions are labeled)
+V-2.2:
+- Fixed Trailing Whitespace Error
+- Fixed Cataphract Gloves Hp 30 -> 300
+- Fixed Description formating for : Flak Boots, Flak Gloves, Recon Gloves, Trooper Gloves
+
 V-2.1:
-- CURRENTLY PENDING
+- Postponed
 - Planned Add textures for Cataphract Gloves and Uranium filament Cataphract boots (Currently using each other's variants causing confusion)
 - Planned Polish up Cataphract Boots, Energy Cataphract gloves textures
 - Planned Add functionality to Energy Cataphract gloves
