@@ -1,3 +1,6 @@
+
+## Original ReadMe by bunx
+
 Hey, X here or bun or whatever, just Quickly want to drop in and say that this is my first ever mod I'm releasing publically.
 I have in mind to continue developing it and adding more content, bug fixes and rebalances.
 
