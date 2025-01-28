@@ -87,8 +87,9 @@ Flak boots were outfitted with several straps to hold the armor in place while n
 		</colorGenerator>
 	</ThingDef>
    
+    <!-- ##### SPACER ##### -->
+	
 	<!-- Trooper Boots -->
-		
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Footwear_TrooperBoots</defName>
 		<label>Trooper boots</label>
@@ -353,20 +354,15 @@ Developer's Note: Cataphract Boots were added as a direct solution towards the s
 		</colorGenerator>
 	</ThingDef>
 
-<!-- Uranium Cataphract Boots -->
-		
-	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>Footwear_UraniumCataphractBoots</defName>
-		<label>Uranium Filament Cataphract boots</label>
-		<description>!! This is the "Experimental" variant of the Cataphract Boots, a version more focused on protection rather than any bonuses !!
-			
-A pair of Cataphract armor boots, equipped with top of the line technology, they compete with most experimental models in terms of sheer protection and mobility. 
-		
-Near pinacle of today's technology, these boot's only competition remains experimental models currently in development and upcoming technologies. These Boots are a variant of Standard Boots with Uranium Filament possesing greater protection .
+	<!-- ##### PRESTIGE BOOTS ##### -->
 
-Developer's Note: These Boots are pending discernible sprite, therefore they look identical to standard Cataphract boots for now... This variant was made more in line with the armor itself rather than additional bonuses.</description>
+	<!-- Prestige Boots -->	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Footwear_PrestigeBoots</defName>
+		<label>prestige marine boots</label>
+		<description>A variant of marine armor boots, focused on protection in field, reusing previous spring mechanism.\nExpensive and beautiful, prestige armor like this is usually made for those of high status.\nEmbedded eltex threads also enhance the wearer's psychic sensitivity.</description>
 		<graphicData>
-			<texPath>Things/Footwear/CataphractBoots</texPath>
+			<texPath>Things/Footwear/PrestigeBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
@@ -374,25 +370,27 @@ Developer's Note: These Boots are pending discernible sprite, therefore they loo
 		<generateCommonality>0.1</generateCommonality>
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
-			<Uranium>40</Uranium>
-		    <Hyperweave>25</Hyperweave>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Uranium>5</Uranium>
+			<Gold>5</Gold>
+			<VPE_Eltex MayRequire="VanillaExpanded.VPsycastsE">1</VPE_Eltex>
 		</costList>
 		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToMake>25000</WorkToMake>
-			<Mass>3.5</Mass>
-			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
-			<ArmorRating_Heat>1.25</ArmorRating_Heat>
-			<Insulation_Cold>6</Insulation_Cold>
-			<Insulation_Heat>8</Insulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToMake>13500</WorkToMake>
+			<Mass>2</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>1.7</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.2</MoveSpeed>
+			<MoveSpeed>0.15</MoveSpeed>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>VAE_BootsAndGloves</li>
@@ -407,16 +405,21 @@ Developer's Note: These Boots are pending discernible sprite, therefore they loo
 			</layers>
 			<tags>
 				<li>SpacerMilitary</li>
-			    <li>Cataphract</li>
+				<li>RoyalTier2</li>
+				<li>RoyalTier3</li>
+				<li>RoyalTier4</li>
+				<li>RoyalTier5</li>
+				<li>RoyalTier6</li>
+				<li>RoyalTier7</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>CataphractArmor</researchPrerequisite>
+			<researchPrerequisite>PoweredArmor</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>14</Crafting>
+				<Crafting>7</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
@@ -445,4 +448,5 @@ Developer's Note: These Boots are pending discernible sprite, therefore they loo
 			</options>
 		</colorGenerator>
 	</ThingDef>
+
 </Defs>
