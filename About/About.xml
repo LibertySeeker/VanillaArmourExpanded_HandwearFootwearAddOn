@@ -29,7 +29,7 @@
 	<loadAfter>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
-	<packageId>VanillaExpanded.VARME</packageId>
+	<packageId>VAE_PrestigeAddOn</packageId>
 
 	<description>This Prestige Variants Addon to the Vanilla Armour Expanded Handwear and Footwear Addon is fan made modification/addon of base Vanilla Armour Expanded aiming to supply Handwear and Footwear to all armor sets which currently don't have one.
 
